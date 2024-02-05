@@ -27,7 +27,7 @@ export class ProductsService {
   }
 
   update(id: string, updateProductDto: UpdateProductDto) {
-    return this.productRepo.update(id, updateProductDto);
+    return this.productRepo.update({ id }, updateProductDto);
   }
 
   remove(id: string) {
